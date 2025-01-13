@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta lang="en/US">
+    <title>Oceanapps technologies | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0px;
+            background-color: #f2f3f4;
+        }
+
+        header{
+            position: sticky;
+            top: 0;
+        }
+
+        .nav-bar {
+            background-color: white;
+            display: flex;
+            height: 65px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-section {
+            object-fit: contain;
+            margin-left: 1.5%;
+        }
+
+        .logo-section img {
+            width: 50px;
+        }
+
+        .nav-section {
+            float: right;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-grow: 0.2;
+            margin-right: 3%;
+        }
+
+        .nav-links {
+            color: #3d3d3d;
+            font-size: medium;
+            font-family: sans-serif;
+        }
+
+        .elegant-fill {
+            object-fit: contain;
+        }
+
+        .elegant-fill img {
+            width: 100%;
+        }
+
+        .container {
+            /* background-color:rgb(236, 236, 236); */
+            width: 88%;
+            height: 1000px;
+            margin: 0 auto;
+        }
+
+        .heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+        }
+
+        .heading span{
+            background: linear-gradient(to right, #ff0085, #00b6ff 33%, #0033fd);
+            -webkit-text-fill-color: #00000000;
+            background-clip: text;
+            font-size: 38px;
+            font-family: sans-serif;
+        }
+
+        .introduction{
+            margin-top: 60px;
+            font-family: sans-serif;
+            font-size: larger;
+            text-align: center;
+            color: #4d4d4d;
+        }
+
+        .sections{
+            margin-top: 60px;
+            width: 100%;
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* height: 300px; */
+        }
+
+        .section-item{
+            width: 30%;
+            min-width: 285px;
+            margin: 0 1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 20px;
+            padding: 18px;
+            box-shadow: 0 0px 8px 0 #e1e1e1;
+            /* height: 100%; */
+            /* background-color: antiquewhite; */
+        }
+
+        .section-item .sec{
+            display: flex;
+            justify-content: center;
+        }
+
+        .section-item .sec-info{
+            margin-top: 20px;
+            font-family: sans-serif;
+            font-size: large;
+            color: #4d4d4d;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        .section-item .sec-info a{
+            color: #4d4d4d;
+            text-decoration: none;
+        }
+
+        .section-item .sec-info a:hover{
+            text-decoration: underline;
+        }
+
+        .section-item .more-info{
+            margin-top: 30px;
+            font-family: sans-serif;
+            color:#4d4d4d;
+            padding: 10px 18px;
+            border-radius: 20px;
+            border: 1.5px solid #4d4d4d;
+        }
+
+        .section-item .more-info:hover{
+            color: #f2f3f4;
+            text-decoration: none;
+            background-color: #4d4d4d;
+        }
+
+        .section-item .sec span{
+            background: linear-gradient(to right, #005dfc, #5e00ba);
+            -webkit-text-fill-color: #00000000;
+            background-clip: text;
+            font-size: 32px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo-section">
+                <img src="oalogo.png" />
+            </div>
+            <div class="nav-section">
+                <a href="#" class="nav-links">Home</a>
+                <a href="#" class="nav-links">ERP</a>
+                <a href="#" class="nav-links">Internship</a>
+                <a href="#" class="nav-links">IT Solutions</a>
+                <a href="#" class="nav-links">About</a>
+            </div>
+        </div>
+        <div class="elegant-fill">
+            <img src="elegant_mesh_gradient.png" />
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="heading">
+            <span>Welcome to Oceanapps Technologies</span>
+        </div>
+        <div class="introduction">
+            <b>W</b>e are a team of skilled engineers driven by an innovative vision to shape a better future. At Oceanapps Technologies, we bring together expertise across diverse domains, specializing in AI, Industrial IoT (IIoT), and Machine Learning solutions.
+        </div>
+        <div class="sections">
+            <div class="section-item">
+                <div class="sec"><span>Learn</span></div>
+                <div class="sec-info">Learn in demand IT knowledge of various domains with the interactive <a href="#">classes</a>.</div>
+                <a class="more-info" href="#">Join now</a>
+            </div>
+            <div class="section-item">
+                <div class="sec"><span>Practice</span></div>
+                <div class="sec-info">Gain experience in demanding IT skills of various domains with our <a href="#">internship&nbsp;program</a>.</div>
+                <a class="more-info" href="#">Enroll now</a>
+            </div>
+            <div class="section-item">
+                <div class="sec"><span>Service</span></div>
+                <div class="sec-info">Simplify your business/task with our <a href="#">IT&nbsp;Solutions</a>.</div>
+                <a class="more-info" href="#">Hire</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
