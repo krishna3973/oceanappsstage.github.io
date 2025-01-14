@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta lang="en/US">
     <title>Oceanapps technologies | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -17,7 +16,9 @@
         }
 
         .nav-bar {
-            background-color: white;
+            /* background-color: #ffffffc9; */
+            background-image: linear-gradient(180deg, #ffffff, #ffffff, #f2f3f47a);
+            backdrop-filter: blur(4px);
             display: flex;
             height: 65px;
             align-items: center;
@@ -59,7 +60,7 @@
         .container {
             /* background-color:rgb(236, 236, 236); */
             width: 88%;
-            height: 1000px;
+            /* height: 1000px; */
             margin: 0 auto;
         }
 
@@ -104,7 +105,7 @@
             align-items: center;
             border-radius: 20px;
             padding: 18px;
-            box-shadow: 0 0px 8px 0 #e1e1e1;
+            box-shadow: 0 0px 8px 0 #5a96ff;
             /* height: 100%; */
             /* background-color: antiquewhite; */
         }
@@ -154,14 +155,77 @@
             font-size: 32px;
             font-family: sans-serif;
         }
+
+        .brief{
+            width: 80%;
+            margin: 60px auto 0 auto;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            border-radius: 30px;
+            box-shadow: 0 0px 10px 3px #7070ff;
+            text-align: center;
+        }
+
+        .brief div{
+            margin: 15px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .brief div span{
+            
+            font-family: sans-serif;
+            font-size: x-large;
+            color: #4d4d4d;
+            margin: 10px 0;
+        }
+
+        .brief div .headink{
+            font-size: xx-large;
+            /* color: #1f1f1f; */
+            background: linear-gradient(to right, #c200dc, #002cdc);
+            -webkit-text-fill-color: #00000000;
+            background-clip: text;
+        }
+
+        .brief div span a{
+            color: #4d4d4d;
+        }
+
+        .brief div span i{
+            font-size: large;
+        }
+
+        .brief hr{
+            border: 1px solid #d3d6eb;
+            /* padding: 1px; */
+            width: 90%;
+        }
+
+        .footer{
+            background-color: #f2f3f4;
+            color: #595959;
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.4em;
+        }
+
+        .footer div{
+            width: 60%;
+        }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
         <div class="nav-bar">
             <div class="logo-section">
-                <img src="oalogo.png" />
+                <img src="oalogo.png" draggable="false"/>
             </div>
             <div class="nav-section">
                 <a href="#" class="nav-links">Home</a>
@@ -171,10 +235,11 @@
                 <a href="#" class="nav-links">About</a>
             </div>
         </div>
-        <div class="elegant-fill">
-            <img src="elegant_mesh_gradient.png" />
-        </div>
+        
     </header>
+    <div class="elegant-fill">
+        <img src="elegant_mesh_gradient.png" draggable="false" />
+    </div>
 
     <div class="container">
         <div class="heading">
@@ -191,7 +256,7 @@
             </div>
             <div class="section-item">
                 <div class="sec"><span>Practice</span></div>
-                <div class="sec-info">Gain experience in demanding IT skills of various domains with our <a href="#">internship&nbsp;program</a>.</div>
+                <div class="sec-info">Gain experience in demanding IT skills of various domains with our certified <a href="#">internship&nbsp;program</a>.</div>
                 <a class="more-info" href="#">Enroll now</a>
             </div>
             <div class="section-item">
@@ -200,8 +265,36 @@
                 <a class="more-info" href="#">Hire</a>
             </div>
         </div>
+        <div class="brief">
+            <div>
+                <span class="headink">From C Language to AIML.</span>
+                <br>
+                <span>Learn indemand IT knowledge and be ready to play in the coding grounds.</span>
+                <span>Check out the courses <a href="#">here</a> <i class="fa fa-external-link"></i></span>
+            </div>
+            <hr>
+            <div>
+                <span class="headink">Ready to play in the coding grounds.</span>
+                <br>
+                <span>Practice code and gain skills during the training sessions.</span>
+                <span>Check out the internships <a href="#">here</a> <i class="fa fa-external-link"></i></span>
+            </div>
+            <hr> 
+            <div>
+                <span class="headink">Rule the digital era.</span>
+                <br>
+                <span>Use advanced IT solutions for your business/task.</span>
+                <span>Hire a professional <a href="#">here</a> <i class="fa fa-external-link"></i></span>
+            </div>           
+        </div>
+        
     </div>
 
+    <div class="footer">
+        <div>
+        Oceanapps specializes in creating tailored cross-domain products and solutions that seamlessly bridge the gap between the digital and industrial worlds using the Industrial Internet of Things (IIoT) platform.By implementing IIoT, we enhance resource utilization, boost system efficiency, and ensure that products and services consistently meet the required specifications.
+        </div>
+    </div>
 
 </body>
 
