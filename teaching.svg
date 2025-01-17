@@ -36,10 +36,10 @@
      id="defs1"><linearGradient
        id="linearGradient17"
        inkscape:collect="always"><stop
-         style="stop-color:#ffffff;stop-opacity:0;"
+         style="stop-color:#f2f3f4;stop-opacity:0;"
          offset="0"
          id="stop18" /><stop
-         style="stop-color:#ffffff;stop-opacity:1;"
+         style="stop-color:#f2f3f4;stop-opacity:1;"
          offset="1"
          id="stop17" /></linearGradient><rect
        x="617.01379"
@@ -74,7 +74,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-9.5581255,-19.210443)"><rect
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.0999999;paint-order:fill markers stroke"
+       style="fill:#f2f3f4;fill-opacity:1;stroke-width:0.0999999;paint-order:fill markers stroke"
        id="rect4"
        width="213.79002"
        height="116.03802"
