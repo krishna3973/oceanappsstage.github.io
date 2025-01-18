@@ -175,8 +175,10 @@
 
         .cmp-mtr {
             display: flex;
+            flex-direction: row;
             font-size: medium;
             justify-content: space-around;
+            gap: 40px;
         }
 
         .mtr {
@@ -238,10 +240,16 @@
         }
 
         @media only screen and (max-width:700px){
+
             .service-sections{
                 flex-direction: column;
                 gap: 20px;
             }
+
+            .cmp-mtr{
+                flex-direction: column;
+            }
+            
         }
 
         @media only screen and (max-width:1023px){
@@ -523,21 +531,25 @@
         <div class="cmp-metrics">
             <span class="cmp-mtr-headink">some astonishing numbers of oceanapps</span>
             <div class="cmp-mtr">
-                <div class="mtr">
-                    <span class="mtr-num">21</span>
-                    <span>Clients</span>
+                <div style="display: flex;width: 100%; justify-content: space-around;">
+                    <div class="mtr">
+                        <span class="mtr-num">21</span>
+                        <span>Clients</span>
+                    </div>
+                    <div class="mtr">
+                        <span class="mtr-num">19</span>
+                        <span>Projecs</span>
+                    </div>
                 </div>
-                <div class="mtr">
-                    <span class="mtr-num">19</span>
-                    <span>Projecs</span>
-                </div>
-                <div class="mtr">
-                    <span class="mtr-num">500</span>
-                    <span>Hours of support</span>
-                </div>
-                <div class="mtr">
-                    <span class="mtr-num">15</span>
-                    <span>Hard Workers</span>
+                <div style="display: flex;width: 100%; justify-content: space-around;">
+                    <div class="mtr">
+                        <span class="mtr-num">500</span>
+                        <span>Hours of support</span>
+                    </div>
+                    <div class="mtr">
+                        <span class="mtr-num">15</span>
+                        <span>Hard Workers</span>
+                    </div>
                 </div>
             </div>
         </div>
