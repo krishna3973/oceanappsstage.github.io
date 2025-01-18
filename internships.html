@@ -12,6 +12,7 @@
         .greets{
             font-family: sans-serif;
             font-size: xxx-large;
+            line-height: 70px;
         }
     
         .container img{
@@ -88,6 +89,67 @@
             border-radius: 20px;
             
         }
+
+        @media only screen and (max-width:1023px){
+
+            .elegant-fill img{
+                height: 25px;
+            }
+
+            .container{
+                width: 92%;
+            }
+
+            .heading span{
+                font-size: x-large;
+            }
+
+            .greets{
+                font-size: x-large;
+                line-height: 40px;
+            }
+
+            .course-card{
+                flex-direction: column;
+                padding: 20px 0px;
+                margin: 40px 8px;
+            }
+
+            .img-section{
+                align-self: center;
+            }
+
+            .course-card .course-description .course-name{
+                font-size: x-large;
+            }
+
+            .course-card .course-description .btn{
+                margin-top: 4%;
+            }
+
+        }
+
+        @media only screen and (max-width:1100px){
+
+            .footer{
+                margin-top: 0px;
+            }
+
+            .footer-desc{
+                font-size: medium;
+                line-height: 1.14em;
+            }
+
+            .footer div{
+                width: 92%;
+            }
+
+            .footer hr{
+                width: 92%;
+            }
+            
+        }
+
 
     </style>
 </head>
@@ -328,7 +390,7 @@
             </div>
         </div>
 
-        <div class="greets" style="margin-top: 20px;line-height: 70px;text-align: center;">
+        <div class="greets" style="margin-top: 20px;text-align: center;">
             <span style="color: #6c6c6c;">No idea what course to select ?</span>
             <br>
             <span style="color: #1f1f1f;">Feel free to talk with us <a href="about.html" class="fa fa-external-link" style="color: #1f1f1f;text-decoration: none;"></a></span>
@@ -339,7 +401,7 @@
 
     <div class="footer">
         <hr>
-        <div>
+        <div class="footer-desc">
         Oceanapps specializes in creating tailored cross-domain products and solutions that seamlessly bridge the gap between the digital and industrial worlds using the Industrial Internet of Things (IIoT) platform.By implementing IIoT, we enhance resource utilization, boost system efficiency, and ensure that products and services consistently meet the required specifications.
         </div>
         <hr>
