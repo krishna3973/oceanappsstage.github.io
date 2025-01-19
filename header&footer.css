@@ -3,7 +3,7 @@
     .container{
         width: 92%;
     }
-    
+
 }
 
 body {
@@ -49,6 +49,11 @@ header{
     color: #3d3d3d;
     font-size: medium;
     font-family: sans-serif;
+}
+
+.nav-bar svg{
+    object-fit: contain;
+    width: 50px;
 }
 
 .elegant-fill {

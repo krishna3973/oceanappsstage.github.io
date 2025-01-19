@@ -131,6 +131,16 @@
 
         @media only screen and (max-width:1100px){
 
+            .nav-links{
+                text-decoration: none;
+                padding: 6px;
+                width: 100%;
+                text-align: center;
+                border: 1px solid #ebebeb;
+                border-radius: 20px;
+                background-image: linear-gradient(180deg, #ffffff, #f2f3f4);
+            }
+
             .footer{
                 margin-top: 0px;
             }
@@ -147,7 +157,22 @@
             .footer hr{
                 width: 92%;
             }
+
+        }
+
+        .mob-nav {
+            visibility: hidden;
+            height: 0px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+
+            background-color: rgb(242, 243, 244);
+            box-shadow: rgb(212, 211, 211) 0px 7px 6px 0px;
+            position: absolute;
             
+            width: 100%;
         }
 
 
@@ -159,19 +184,98 @@
             <div class="logo-section">
                 <img src="oceanappslogo.svg" draggable="false"/>
             </div>
-            <div class="nav-section">
+            <div class="nav-section" id="pad-nav">
                 <a href="index.html" class="nav-links">Home</a>
                 <a href="courses.html" class="nav-links">Course</a>
                 <a href="internships.html" class="nav-links">Internship</a>
                 <a href="itsolutions.html" class="nav-links">IT Solutions</a>
                 <a href="about.html" class="nav-links">About</a>
             </div>
+            <svg width="15.711234mm" height="15.7112mm" viewBox="0 0 15.711234 15.7112" version="1.1" id="menuimg"
+                xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                <defs id="defs1" />
+                <g id="layer1" transform="translate(-185.45684,-10.520129)">
+                    <path
+                        style="fill:#00000000;fill-opacity:1;stroke:none;stroke-width:0.921794;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+                        id="menu-circle"
+                        d="m 193.39308,26.230915 a 7.855617,7.8555999 0 0 1 -7.93578,-7.769827 7.855617,7.8555999 0 0 1 7.76506,-7.940443 7.855617,7.8555999 0 0 1 7.94514,7.760252 7.855617,7.8555999 0 0 1 -7.75548,7.9498 z" />
+                    <g id="menu-three" style="fill:none;stroke:#4c4c4c;stroke-width:0.921791;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke">
+                        <path
+                            
+                            d="m 188.99503,16.047045 h 8.63485" id="path1" />
+                        <path
+                            
+                            d="m 188.99503,18.375728 h 8.63485" id="path2" />
+                        <path
+                            
+                            d="m 188.99503,20.704411 h 8.63485" id="path3" />
+                    </g>
+                    <path
+                        style="fill:none;fill-opacity:1;stroke:#00000000;stroke-width:0.922;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+                        d="m 189.05384,20.628454 4.39575,-4.347911 4.15898,4.347911" id="menu-arrow" />
+                </g>
+            </svg>
         </div>
+        
+        <div class="mob-nav" id="btn-nav">
+            <a href="index.html" class="nav-links">Home</a>
+            <a href="courses.html" class="nav-links">Course</a>
+            <a href="internships.html" class="nav-links">Internship</a>
+            <a href="itsolutions.html" class="nav-links">IT Solutions</a>
+            <a href="about.html" class="nav-links">About</a>
+        </div>
+        
         
     </header>
     <div class="elegant-fill">
         <img src="elegant_mesh_gradient.png" draggable="false" />
     </div>
+
+    <script>
+        var vwidth = screen.availWidth;
+
+        function presize() {
+            if (vwidth <= 1100) {
+                console.log("mobile");
+
+                document.getElementById("pad-nav").style.display = "none";
+                document.getElementById("btn-nav").style.display = "flex";
+                document.getElementById("menuimg").style.display = "inherit";
+            } else {
+                document.getElementById("pad-nav").style.display = "inherit";
+                document.getElementById("btn-nav").style.display = "none";
+                document.getElementById("menuimg").style.display = "none";
+            }
+        }
+
+        window.onresize = function () {
+            vwidth = screen.availWidth;
+            presize();
+        }
+
+        presize();
+
+        var menu_closed = true;
+
+        document.getElementById("menuimg").addEventListener("click", function(){
+
+            if(menu_closed){
+                document.getElementById("btn-nav").style.visibility = "visible";
+                document.getElementById("btn-nav").style.height = "auto";
+                document.querySelector("#menu-arrow").style.stroke =  "#4c4c4c";
+                document.querySelector("#menu-three").style.stroke =  "transparent";
+                menu_closed = false;
+            }else{
+                document.getElementById("btn-nav").style.visibility = "hidden";
+                document.getElementById("btn-nav").style.height = "0px";
+                document.querySelector("#menu-arrow").style.stroke =  "transparent";
+                document.querySelector("#menu-three").style.stroke =  "#4c4c4c";
+                menu_closed = true;
+            }
+             console.log("clicked");
+        });
+
+    </script>
 
     <div class="container">
 
